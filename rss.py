@@ -14,13 +14,13 @@ if os.path.exists("config.env"):
 
 
 try:
-    api_id = int(os.environ.get("API_ID"))   # Get it from my.telegram.org
-    api_hash = os.environ.get("API_HASH")   # Get it from my.telegram.org
+    api_id = 18983092   # Get it from my.telegram.org
+    api_hash = "a6005a70e88369b4fb08b8350ebbdd35"   # Get it from my.telegram.org
     feed_urls = list(set(i for i in os.environ.get("FEED_URLS").split("|")))  # RSS Feed URL of the site.
     bot_token = os.environ.get("BOT_TOKEN")   # Get it by creating a bot on https://t.me/botfather
-    log_channel = int(os.environ.get("LOG_CHANNEL"))   # Telegram Channel ID where the bot is added and have write permission. You can use group ID too.
-    check_interval = int(os.environ.get("INTERVAL", 10))   # Check Interval in seconds.  
-    max_instances = int(os.environ.get("MAX_INSTANCES", 3))   # Max parallel instance to be used.
+    log_channel = -1001549232084   # Telegram Channel ID where the bot is added and have write permission. You can use group ID too.
+    check_interval = 10   # Check Interval in seconds.  
+    max_instances = 3   # Max parallel instance to be used.
 except Exception as e:
     print(e)
     print("One or more variables missing. Exiting !")
