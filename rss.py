@@ -16,7 +16,7 @@ if os.path.exists("config.env"):
 try:
     api_id = 18983092   # Get it from my.telegram.org
     api_hash = "a6005a70e88369b4fb08b8350ebbdd35"   # Get it from my.telegram.org
-    feed_urls = "https://subsplease.org/rss/?t&r=720"  # RSS Feed URL of the site.
+    feed_urls = "https://subsplease.org/rss/?r=720"  # RSS Feed URL of the site.
     bot_token = "5588117391:AAGYNQNFoU1g_4nVFxp-4A7NsXsjbjKfiR8"   # Get it by creating a bot on https://t.me/botfather
     log_channel = -1001549232084   # Telegram Channel ID where the bot is added and have write permission. You can use group ID too.
     check_interval = 10   # Check Interval in seconds.  
